@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niveles de consciencia de Eugene Schwartz · Meta Ads Mastery 2.0</title>
+<meta name="description" content="Recurso exclusivo de Meta Ads Mastery 2.0: los niveles de consciencia de Eugene Schwartz aplicados a tus anuncios de Meta Ads.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Niveles de consciencia de Eugene Schwartz · MAMS 2.0">
+<meta property="og:description" content="Recurso exclusivo de Meta Ads Mastery 2.0.">
+<meta property="og:image" content="assets/portada-video.jpg">
+<link rel="icon" type="image/png" href="assets/meta-cohete.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04060E; --bg2:#070C1F; --blue:#1F5CFF; --blue2:#3D8BFF; --cyan:#62C9FF; --yellow:#FFD400;
+  --white:#fff; --muted:#9AA3BE; --card:rgba(18,30,70,.5); --card-b:rgba(110,150,255,.2);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--white);background:var(--bg);line-height:1.5;min-height:100vh;
+  background:
+    radial-gradient(900px 600px at 85% -5%,rgba(31,92,255,.35),transparent 60%),
+    radial-gradient(800px 600px at -10% 60%,rgba(31,92,255,.18),transparent 60%),
+    linear-gradient(180deg,var(--bg2),var(--bg) 60%);}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(120,150,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(120,150,255,.07) 1px,transparent 1px);
+  background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 20%,#000 20%,transparent 75%)}
+.wrap{position:relative;max-width:1080px;margin:0 auto;padding:0 24px}
+em{font-style:normal;color:var(--yellow)}
+
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.12em;font-size:15px;color:#fff;text-decoration:none}
+.brand img{width:44px;height:auto}
+.brand b{color:var(--yellow)}
+.pill{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);border:1px solid rgba(255,212,0,.45);background:rgba(255,212,0,.08);padding:8px 14px;border-radius:999px}
+
+/* hero */
+.hero{text-align:center;padding:28px 0 30px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px}
+.kicker::before,.kicker::after{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+h1{font-weight:900;font-size:clamp(34px,6vw,64px);line-height:1.02;letter-spacing:-.03em;text-transform:uppercase}
+h1 .y{font-family:"Archivo Black",Inter,sans-serif;font-weight:400;color:var(--yellow);text-shadow:0 0 40px rgba(255,212,0,.25)}
+.lead{max-width:640px;margin:18px auto 0;font-size:clamp(16px,2.2vw,19px);color:#C9D2EA}
+
+/* video */
+.player{position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;background:#000;
+  border:1px solid rgba(255,212,0,.35);box-shadow:0 0 0 6px rgba(255,212,0,.05),0 50px 120px -40px rgba(31,92,255,.85)}
+.player iframe,.player .poster{position:absolute;inset:0;width:100%;height:100%;border:0}
+.poster{cursor:pointer;background:#000 center/cover no-repeat;display:grid;place-items:center;border:0;padding:0}
+.poster::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(4,6,14,0) 30%,rgba(4,6,14,.45))}
+.play{position:relative;z-index:1;width:clamp(72px,11vw,104px);aspect-ratio:1;border-radius:50%;background:var(--yellow);display:grid;place-items:center;
+  box-shadow:0 0 0 10px rgba(255,212,0,.18),0 20px 50px rgba(0,0,0,.5);transition:transform .25s ease,box-shadow .25s}
+.play svg{width:38%;margin-left:8%}
+.poster:hover .play,.poster:focus-visible .play{transform:scale(1.08);box-shadow:0 0 0 16px rgba(255,212,0,.2),0 20px 50px rgba(0,0,0,.5)}
+.poster:focus-visible{outline:3px solid var(--yellow);outline-offset:-3px}
+.vnote{text-align:center;color:var(--muted);font-size:13px;margin-top:12px}
+
+/* levels */
+.levels{margin:56px 0 0}
+.levels h2,.cta h2{font-weight:900;font-size:clamp(24px,3.4vw,34px);letter-spacing:-.02em;text-transform:uppercase;text-align:center}
+.levels .sub{text-align:center;color:var(--muted);margin:8px 0 26px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:end}
+.step{border-radius:18px;padding:18px 16px;background:var(--card);border:1px solid var(--card-b);display:flex;flex-direction:column;gap:8px}
+.step b{font-family:"Archivo Black",sans-serif;font-weight:400;font-size:30px;line-height:1;color:var(--yellow)}
+.step div{display:flex;flex-direction:column;gap:6px}
+.step strong{font-size:16px;line-height:1.2}
+.step span{font-size:14px;color:#B7C1DC;line-height:1.4}
+.step:nth-child(1){min-height:170px}.step:nth-child(2){min-height:195px}.step:nth-child(3){min-height:220px}.step:nth-child(4){min-height:245px}
+.step:nth-child(5){min-height:270px;border-color:rgba(255,212,0,.6);background:linear-gradient(160deg,rgba(255,212,0,.14),rgba(31,92,255,.2))}
+
+/* cta */
+.cta{margin:64px 0 0;padding:44px 32px;border-radius:28px;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(160deg,rgba(31,92,255,.38),rgba(10,20,60,.85));border:1px solid rgba(255,212,0,.5);
+  box-shadow:0 60px 140px -50px rgba(31,92,255,1)}
+.cta::before{content:"";position:absolute;inset:auto -10% -60% -10%;height:120%;background:radial-gradient(ellipse at 50% 100%,rgba(255,212,0,.18),transparent 60%);pointer-events:none}
+.cta > *{position:relative}
+.cta .logo{width:86px;margin:0 auto 14px;display:block;filter:drop-shadow(0 10px 20px rgba(0,0,0,.5))}
+.cta p{max-width:600px;margin:12px auto 0;color:#DCE3F5;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:18px 34px;border-radius:999px;background:var(--yellow);color:#0B0B0B;
+  font-weight:900;font-size:18px;letter-spacing:.02em;text-decoration:none;text-transform:uppercase;
+  box-shadow:0 0 0 8px rgba(255,212,0,.16),0 20px 40px -10px rgba(255,212,0,.6);transition:transform .2s ease,box-shadow .2s}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);box-shadow:0 0 0 12px rgba(255,212,0,.2),0 26px 50px -10px rgba(255,212,0,.7)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.btn svg{width:20px;height:20px}
+.urgency{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:20px;font-size:14px;font-weight:700;color:#FFE27A}
+.urgency i{width:9px;height:9px;border-radius:50%;background:#FF3355;box-shadow:0 0 10px #FF3355;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.pillars{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:22px}
+.pillars span{font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;background:rgba(4,6,14,.5);border:1px solid var(--card-b)}
+
+footer{padding:48px 0 40px;text-align:center;color:#6F7A9C;font-size:13px}
+
+@media (max-width:760px){
+  header{padding:16px 0}
+  .pill{display:none}
+  .hero{padding:16px 0 22px}
+  .player{border-radius:14px}
+  .steps{grid-template-columns:1fr;gap:10px}
+  .step,.step:nth-child(n){min-height:0;flex-direction:row;align-items:center;gap:14px}
+  .cta{padding:34px 20px;border-radius:22px}
+  .btn{width:100%;justify-content:center;padding:17px 20px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="https://www.skool.com/meta-ads-mastery-carlosguti" target="_blank" rel="noopener"><img src="assets/meta-cohete.png" alt="">META ADS MASTERY <b>2.0</b></a>
+    <span class="pill">🎁 Recurso exclusivo</span>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Psicología de ventas</div>
+    <h1><span class="y">Niveles de consciencia</span><br>de Eugene Schwartz</h1>
+    <p class="lead">Cómo aplicarlos a tus <em>anuncios de Meta Ads</em> para hablarle a cada persona según lo cerca que esté de comprar.</p>
+  </section>
+
+  <div class="player" id="player">
+    <button class="poster" id="poster" style="background-image:url('assets/portada-video.jpg')" aria-label="Reproducir el vídeo">
+      <span class="play"><svg viewBox="0 0 24 24" fill="#0B0B0B" aria-hidden="true"><path d="M6 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L7.5 3.64A1 1 0 0 0 6 4.5z"/></svg></span>
+    </button>
+  </div>
+  <p class="vnote">Pulsa para reproducir · Si no carga, <a href="https://youtu.be/asKHNhft5Nw" target="_blank" rel="noopener" style="color:var(--cyan)">ábrelo en YouTube</a></p>
+
+  <section class="levels">
+    <h2>Los <em>5 niveles</em> de consciencia</h2>
+    <p class="sub">De quien no sabe que tiene un problema a quien está listo para comprar.</p>
+    <div class="steps">
+      <div class="step"><b>1</b><div><strong>Inconsciente</strong><span>No sabe que tiene un problema.</span></div></div>
+      <div class="step"><b>2</b><div><strong>Consciente del problema</strong><span>Sabe que tiene un problema, pero no conoce la solución.</span></div></div>
+      <div class="step"><b>3</b><div><strong>Consciente de la solución</strong><span>Conoce la solución, pero no tu producto.</span></div></div>
+      <div class="step"><b>4</b><div><strong>Consciente del producto</strong><span>Conoce tu producto, pero aún no está convencido.</span></div></div>
+      <div class="step"><b>5</b><div><strong>Totalmente consciente</strong><span>Conoce tu producto y solo necesita la oferta adecuada.</span></div></div>
+    </div>
+  </section>
+
+  <section class="cta" id="mams">
+    <img class="logo" src="assets/meta-cohete.png" alt="">
+    <h2>Entra en <em>Meta Ads Mastery 2.0</em></h2>
+    <p>Formación, IA, herramientas, casos reales y una comunidad para dejar de improvisar con Meta Ads y empezar a escalar con mi sistema.</p>
+    <div class="pillars"><span>🎓 Formación completa</span><span>🤖 MAMS AI + Ads Tracker</span><span>🧠 Casos reales</span><span>📅 Sesiones en directo</span><span>🤝 Comunidad</span></div>
+    <a class="btn" href="https://www.skool.com/meta-ads-mastery-carlosguti" target="_blank" rel="noopener">
+      Quiero entrar en MAMS 2.0
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="urgency"><i></i>Entra antes de que se cierre el acceso</div>
+  </section>
+
+  <footer>© Meta Ads Mastery 2.0 · Carlos Guti</footer>
+</div>
+
+<script>
+(function(){
+  var id = 'asKHNhft5Nw';
+  var poster = document.getElementById('poster');
+  poster.addEventListener('click', function(){
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+    f.title = 'Niveles de consciencia de Eugene Schwartz';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen = true;
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    document.getElementById('player').replaceChildren(f);
+  });
+})();
+</script>
+</body>
+</html>
